@@ -27,9 +27,9 @@ function App() {
         onKeyPress={searchLocation}
         placeholder='Enter Location Here'
         type="text" autoFocus/>
-        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1">Location: {location}</h3> : null}
-        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1">UV: {data.current.uv}</h3> : null}
-        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1">Last Updated: {data.current.last_updated}</h3> : null}
+        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1" id='data1'>Location: {location}</h3> : null}
+        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1" id='data2'>UV: {data.current.uv}</h3> : null}
+        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1" id='data3'>Last Updated: {data.current.last_updated}</h3> : null}
     </div>
   );
 }
