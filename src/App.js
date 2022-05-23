@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+
+  const [data, setData] = useState({});
+  const [location, setLocation] = useState('');
+
+
+
+  const url = `https://api.weatherapi.com/v1/current.json?key=6faf5b59cfb64658aec193453222305&q=${location}&aqi=no`;
+  const searchLocation = (event) => {
+    if (event.key === 'Enter') {
+      axios.get(url)
+      .then((response) => {
+        setData(response.data);
+      });
+    }
+  }
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input value={location}
+        onChange={e => setLocation(e.target.value)}
+        onKeyPress={searchLocation}
+        placeholder='Enter Location Here'
+        type="text" autoFocus/>
+        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1">Location: {location}</h3> : null}
+        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1">UV: {data.current.uv}</h3> : null}
+        {data.current ? <h3 className="u-custom-font u-font-oswald u-text u-text-default u-text-1">Last Updated: {data.current.last_updated}</h3> : null}
     </div>
   );
 }
