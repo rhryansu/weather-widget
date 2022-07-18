@@ -27,7 +27,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#feature-preview">Feature Preview</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -44,37 +43,45 @@
 
 ## About the Project
 
-**This repository is dedicated for www.protecturskin.social**
+**This repository is a part of [Protect Your Skin](https://github.com/rhryansu/protecturskin)**
 
 ### Built With
 
 React.js
-Flask
-TensorFlow
-SpringBoot
 
-## Feature Preview 
-- [ ] Filtering products based on user input for [sunburn protection recommedation](https://github.com/rhryansu/weather-widget)
-- [ ] Replace port exposure with React-Router
-- [ ] Re-design disclaimer for [sunburn recognition](https://github.com/rhryansu/file-uploader-widget)
+### Integrated With
 
-
+* AWS Elastic Compute Cloud (EC2)
 ## Getting Started
 
 
 ### Prerequisites
+**Environment**
+* Node.js
 
-* Text editor (VSCode recommended) with live server plugin (recommended, not required)
+### Dependencies
+* Cross-env
+
+
+### Installation
+
+1. Clone this repo
+
+   ```git clone https://github.com/rhryansu/weather-widget.git```
+<br/>
+2. Open cloned folder with an IDE which has node.js installed
+* Install node modules on the command line
+    ```npm install```
+* Install cross-env on the command line
+    ```npm install cross-env```
+* Run the following command to start the app
+    ```npm start```
+* Open the app in a browser
+    ```http://localhost:4000/```
 
 ## Usage
 
-1. Explore and learn sun protection knowledge.
-
-2. Take [quiz test](http://protecturskin.social:3000/)
-
-3. Upload a burnt skin photo to [sunburn recognition](http://protecturskin.social:2000/#sec-392d)
-
-4. Type in your location then get a [recommendation](http://protecturskin.social:4000) for sun protection.
+Type in the location where you want to know the UV index and get the recommendation of protection.
 
 ## License
 
@@ -87,8 +94,6 @@ SpringBoot
 Ruihua Su - rh.ryan.su@gmail.com
 
 Project Link: https://github.com/rhryansu/protecturskin
-
-
 
 ## Acknowledgments
 
