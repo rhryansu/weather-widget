@@ -25,6 +25,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#integrated-with">Integrated With</a></li>
       </ul>
     </li>
     <li>
@@ -59,7 +60,7 @@ React.js
 **Environment**
 * Node.js
 
-### Dependencies
+**Dependencies**
 * Cross-env
 
 
@@ -69,6 +70,7 @@ React.js
 
    ```git clone https://github.com/rhryansu/weather-widget.git```
 <br/>
+
 2. Open cloned folder with an IDE which has node.js installed
 * Install node modules on the command line
     ```npm install```
